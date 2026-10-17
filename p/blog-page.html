@@ -1,0 +1,722 @@
+<!-- ═══════════════════════════════════════════════════════════════════
+     PAGE: من نحن — جماعة إنشادن
+     Hero with building background + Photo banner + Fixed list + Map
+     ═══════════════════════════════════════════════════════════════════ -->
+
+<style>
+/* ─── SCOPED STYLES ─── */
+.inchaden-about {
+  --ia-primary:#0e3a5c;
+  --ia-primary2:#1a5490;
+  --ia-green:#2d7a3e;
+  --ia-bg:#fff;
+  --ia-bg-soft:#f7f9fa;
+  --ia-text:#1e293b;
+  --ia-text-soft:#64748b;
+  --ia-border:#e2e8f0;
+  --ia-radius:14px;
+  --ia-shadow:0 4px 20px rgba(14,58,92,.06);
+  max-width:1000px;
+  margin:0 auto;
+  direction:rtl;
+  text-align:right;
+  font-family:'Cairo', system-ui, -apple-system, sans-serif;
+  color:var(--ia-text);
+  line-height:1.9;
+  padding:0;
+  box-sizing:border-box;
+}
+.inchaden-about *, .inchaden-about *::before, .inchaden-about *::after {
+  box-sizing:border-box;
+}
+
+/* ─── HERO with commune building background ─── */
+.inchaden-about .ia-hero {
+  background:
+    linear-gradient(135deg, rgba(14,58,92,.90) 0%, rgba(26,84,144,.85) 55%, rgba(45,122,62,.85) 100%),
+    url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-ZjljWYnEc8YMyTAkcAlVpDwCoOeZyATWjJTjrc2Y9sfg5WGYyV-8T32xrODOXr7C1oUN2Uc7DOqorH5_auaHq2vX5Var2KUaFBJBWEpwyFFm1qGI0JpopmnT9QL35W1PANrcQhm9BcAEw83OzrGWrUtp0IIRRVTJMD7xNOvsq00t-s2BlBXj1XxBZ_Si/s1600/Capture%20d%27%C3%A9cran%202026-10-16%20160618.png') center center / cover no-repeat;
+  color:#fff;
+  padding:80px 32px;
+  border-radius:18px;
+  text-align:center;
+  margin-bottom:28px;
+  box-shadow:0 10px 40px rgba(14,58,92,.25);
+  position:relative;
+  overflow:hidden;
+}
+.inchaden-about .ia-hero h1 {
+  color:#fff !important;
+  font-size:40px;
+  font-weight:900;
+  margin:0 0 12px;
+  text-shadow:0 3px 14px rgba(0,0,0,.6);
+  position:relative;
+  z-index:1;
+  letter-spacing:-0.5px;
+}
+.inchaden-about .ia-hero p {
+  color:rgba(255,255,255,.95);
+  font-size:15px;
+  margin:0;
+  position:relative;
+  z-index:1;
+  font-weight:500;
+  text-shadow:0 2px 8px rgba(0,0,0,.5);
+}
+.inchaden-about .ia-hero .ia-hero-tag {
+  display:inline-block;
+  background:rgba(255,255,255,.2);
+  border:1px solid rgba(255,255,255,.35);
+  padding:6px 18px;
+  border-radius:20px;
+  font-size:12.5px;
+  margin-bottom:16px;
+  position:relative;
+  z-index:1;
+  font-weight:600;
+  letter-spacing:.5px;
+  backdrop-filter:blur(4px);
+  -webkit-backdrop-filter:blur(4px);
+}
+
+/* ─── PHOTO BANNER (no frame) ─── */
+.inchaden-about .ia-photo-banner {
+  position:relative;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 10px 40px rgba(14,58,92,.2);
+  margin-bottom:28px;
+  background:transparent;
+  line-height:0;
+  font-size:0;
+}
+.inchaden-about .ia-photo-banner img {
+  width:100%;
+  height:auto;
+  display:block;
+  object-fit:cover;
+  max-height:520px;
+  transition:transform .8s ease;
+  vertical-align:middle;
+}
+.inchaden-about .ia-photo-banner:hover img { transform:scale(1.03); }
+
+.inchaden-about .ia-photo-caption {
+  position:absolute;
+  bottom:16px;
+  right:16px;
+  left:auto;
+  background:rgba(14,58,92,.92);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+  color:#fff;
+  padding:9px 18px;
+  border-radius:22px;
+  font-size:13.5px;
+  font-weight:700;
+  letter-spacing:.3px;
+  box-shadow:0 4px 14px rgba(0,0,0,.35);
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  max-width:calc(100% - 32px);
+  line-height:1.5;
+}
+.inchaden-about .ia-photo-caption::before {
+  content:'🏛';
+  font-size:16px;
+  flex-shrink:0;
+}
+
+/* ─── SECTION CARDS ─── */
+.inchaden-about .ia-section {
+  background:var(--ia-bg);
+  border-radius:var(--ia-radius);
+  padding:32px 36px;
+  margin-bottom:20px;
+  box-shadow:var(--ia-shadow);
+  border:1px solid var(--ia-border);
+  transition:transform .3s, box-shadow .3s;
+}
+.inchaden-about .ia-section:hover {
+  box-shadow:0 8px 30px rgba(14,58,92,.1);
+}
+.inchaden-about .ia-section h2 {
+  font-size:22px;
+  color:var(--ia-primary);
+  margin:0 0 20px;
+  padding-bottom:14px;
+  border-bottom:2px solid var(--ia-border);
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-weight:800;
+}
+.inchaden-about .ia-section h2::before {
+  content:'';
+  width:5px;
+  height:24px;
+  border-radius:3px;
+  background:linear-gradient(180deg,var(--ia-primary2),var(--ia-green));
+  display:inline-block;
+  flex-shrink:0;
+}
+.inchaden-about .ia-section p {
+  font-size:16px;
+  line-height:2;
+  color:#334155;
+  margin:0 0 14px;
+}
+.inchaden-about .ia-section p:last-child { margin-bottom:0; }
+.inchaden-about .ia-section strong { color:var(--ia-primary); font-weight:800; }
+.inchaden-about .ia-section a {
+  color:var(--ia-primary2);
+  text-decoration:underline;
+}
+.inchaden-about .ia-section a:hover { color:var(--ia-green); }
+
+/* ─── LIST — green dot, flexbox ─── */
+.inchaden-about .ia-list {
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+  gap:10px;
+}
+.inchaden-about .ia-list li {
+  background:var(--ia-bg-soft);
+  padding:12px 16px;
+  border-radius:10px;
+  font-size:14.5px;
+  color:#334155;
+  font-weight:500;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  transition:all .2s;
+  border:1px solid transparent;
+}
+.inchaden-about .ia-list li::before {
+  content:'';
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:linear-gradient(135deg,var(--ia-primary2),var(--ia-green));
+  flex-shrink:0;
+  box-shadow:0 0 0 3px rgba(45,122,62,.15);
+}
+.inchaden-about .ia-list li:hover {
+  background:#eef5fb;
+  border-color:var(--ia-primary2);
+  transform:translateX(-3px);
+}
+
+/* ─── STATS ─── */
+.inchaden-about .ia-stats {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:16px;
+}
+.inchaden-about .ia-stat {
+  background:linear-gradient(135deg,#f0f7ff,#e8f5ee);
+  border-radius:12px;
+  padding:26px 16px;
+  text-align:center;
+  border:1px solid #d4e8dd;
+  transition:transform .3s, box-shadow .3s;
+}
+.inchaden-about .ia-stat:hover {
+  transform:translateY(-4px);
+  box-shadow:0 12px 30px rgba(26,84,144,.15);
+}
+.inchaden-about .ia-stat-num {
+  font-size:34px;
+  font-weight:900;
+  color:var(--ia-primary2);
+  line-height:1.1;
+  display:block;
+  letter-spacing:-1px;
+}
+.inchaden-about .ia-stat-label {
+  font-size:13px;
+  color:var(--ia-text-soft);
+  font-weight:700;
+  margin-top:8px;
+  display:block;
+}
+
+/* ─── MAP ─── */
+.inchaden-about .ia-map-wrap {
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 6px 26px rgba(14,58,92,.12);
+  margin:20px 0 14px;
+  background:#e2e8f0;
+  position:relative;
+  line-height:0;
+}
+.inchaden-about .ia-map-wrap iframe {
+  display:block;
+  width:100%;
+  height:450px;
+  border:0;
+}
+.inchaden-about .ia-map-note {
+  text-align:center;
+  font-size:13.5px;
+  margin:0;
+}
+.inchaden-about .ia-map-note a {
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  color:var(--ia-primary2);
+  text-decoration:none;
+  font-weight:700;
+  padding:8px 18px;
+  border-radius:20px;
+  background:rgba(26,84,144,.08);
+  transition:all .2s;
+}
+.inchaden-about .ia-map-note a:hover {
+  background:var(--ia-primary2);
+  color:#fff;
+}
+
+/* ─── CONTACT GRID ─── */
+.inchaden-about .ia-contact {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:16px;
+}
+.inchaden-about .ia-contact-item {
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+  background:var(--ia-bg-soft);
+  padding:18px 20px;
+  border-radius:12px;
+  border:1px solid var(--ia-border);
+  transition:all .2s;
+}
+.inchaden-about .ia-contact-item:hover {
+  border-color:var(--ia-primary2);
+  transform:translateY(-2px);
+}
+.inchaden-about .ia-contact-icon {
+  font-size:24px;
+  flex-shrink:0;
+  width:44px;
+  height:44px;
+  background:linear-gradient(135deg,var(--ia-primary2),var(--ia-green));
+  color:#fff;
+  border-radius:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 4px 12px rgba(26,84,144,.25);
+}
+.inchaden-about .ia-contact-body strong {
+  display:block;
+  font-size:14px;
+  color:var(--ia-primary);
+  margin-bottom:4px;
+  font-weight:800;
+}
+.inchaden-about .ia-contact-body p {
+  font-size:14px;
+  color:var(--ia-text-soft);
+  margin:0;
+  line-height:1.6;
+  font-weight:500;
+}
+
+/* ─── DARK MODE ─── */
+body.dark-mode .inchaden-about {
+  --ia-bg:#262624;
+  --ia-bg-soft:#2d2d2b;
+  --ia-text:#e8e6e3;
+  --ia-text-soft:#94a3b8;
+  --ia-border:#3a3a38;
+  --ia-shadow:0 4px 20px rgba(0,0,0,.4);
+}
+body.dark-mode .inchaden-about .ia-hero {
+  background:
+    linear-gradient(135deg, rgba(8,41,63,.93) 0%, rgba(14,58,92,.88) 55%, rgba(30,92,42,.88) 100%),
+    url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-ZjljWYnEc8YMyTAkcAlVpDwCoOeZyATWjJTjrc2Y9sfg5WGYyV-8T32xrODOXr7C1oUN2Uc7DOqorH5_auaHq2vX5Var2KUaFBJBWEpwyFFm1qGI0JpopmnT9QL35W1PANrcQhm9BcAEw83OzrGWrUtp0IIRRVTJMD7xNOvsq00t-s2BlBXj1XxBZ_Si/s1600/Capture%20d%27%C3%A9cran%202026-10-16%20160618.png') center center / cover no-repeat;
+}
+body.dark-mode .inchaden-about .ia-section h2 { color:#e8e6e3 !important; }
+body.dark-mode .inchaden-about .ia-section p { color:#cbd5e1; }
+body.dark-mode .inchaden-about .ia-section strong { color:#e8e6e3; }
+body.dark-mode .inchaden-about .ia-list li { background:#2d2d2b; color:#cbd5e1; }
+body.dark-mode .inchaden-about .ia-list li:hover { background:#3a3a38; }
+body.dark-mode .inchaden-about .ia-stat {
+  background:linear-gradient(135deg,#1e2f3d,#1e3a2e);
+  border-color:#3a3a38;
+}
+body.dark-mode .inchaden-about .ia-stat-num { color:#7db8e8; }
+body.dark-mode .inchaden-about .ia-stat-label { color:#94a3b8; }
+body.dark-mode .inchaden-about .ia-contact-item { background:#2d2d2b; border-color:#3a3a38; }
+body.dark-mode .inchaden-about .ia-contact-body strong { color:#e8e6e3; }
+body.dark-mode .inchaden-about .ia-contact-body p { color:#94a3b8; }
+body.dark-mode .inchaden-about .ia-map-note a {
+  background:rgba(125,184,232,.12);
+  color:#7db8e8;
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width:768px) {
+  .inchaden-about .ia-hero { padding:50px 20px; border-radius:14px; }
+  .inchaden-about .ia-hero h1 { font-size:26px; }
+  .inchaden-about .ia-hero p { font-size:13px; }
+  .inchaden-about .ia-hero .ia-hero-tag { font-size:11.5px; padding:5px 14px; }
+  .inchaden-about .ia-photo-banner { border-radius:14px; margin-bottom:20px; }
+  .inchaden-about .ia-photo-caption { padding:7px 14px; font-size:12px; bottom:12px; right:12px; }
+  .inchaden-about .ia-section { padding:22px 18px; border-radius:12px; margin-bottom:14px; }
+  .inchaden-about .ia-section h2 { font-size:17px; padding-bottom:10px; margin-bottom:14px; }
+  .inchaden-about .ia-section h2::before { height:20px; width:4px; }
+  .inchaden-about .ia-section p { font-size:14.5px; line-height:1.9; }
+  .inchaden-about .ia-list { grid-template-columns:1fr; gap:8px; }
+  .inchaden-about .ia-list li { padding:10px 14px; font-size:13.5px; gap:8px; }
+  .inchaden-about .ia-stats { grid-template-columns:repeat(2,1fr); gap:10px; }
+  .inchaden-about .ia-stat { padding:18px 12px; }
+  .inchaden-about .ia-stat-num { font-size:24px; }
+  .inchaden-about .ia-stat-label { font-size:11.5px; }
+  .inchaden-about .ia-map-wrap iframe { height:300px; }
+  .inchaden-about .ia-contact { grid-template-columns:1fr; gap:10px; }
+  .inchaden-about .ia-contact-item { padding:14px 16px; }
+  .inchaden-about .ia-contact-icon { width:38px; height:38px; font-size:20px; }
+}
+@media (max-width:420px) {
+  .inchaden-about .ia-hero h1 { font-size:22px; }
+  .inchaden-about .ia-stats { grid-template-columns:1fr; }
+  .inchaden-about .ia-map-wrap iframe { height:260px; }
+}
+</style>
+
+<!-- ═══ PAGE CONTENT ═══ -->
+
+<div class="inchaden-about">
+
+  <!-- HERO with building background -->
+  <div class="ia-hero">
+    <span class="ia-hero-tag">الموقع الرسمي</span>
+    <h1>جماعة إنشادن</h1>
+    <p>إقليم شتوكة آيت باها &#8212; جهة سوس ماسة &#8212; المملكة المغربية</p>
+  </div>
+
+  <!-- PHOTO OF COMMUNE CENTER -->
+  <div class="ia-photo-banner">
+    <img
+      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-ZjljWYnEc8YMyTAkcAlVpDwCoOeZyATWjJTjrc2Y9sfg5WGYyV-8T32xrODOXr7C1oUN2Uc7DOqorH5_auaHq2vX5Var2KUaFBJBWEpwyFFm1qGI0JpopmnT9QL35W1PANrcQhm9BcAEw83OzrGWrUtp0IIRRVTJMD7xNOvsq00t-s2BlBXj1XxBZ_Si/s1600/Capture%20d%27%C3%A9cran%202026-10-16%20160618.png"
+      alt="مقر جماعة إنشادن - أربعاء آيت بوالطيب"
+      loading="lazy"/>
+    <div class="ia-photo-caption">مقر جماعة إنشادن &#8212; أربعاء آيت بوالطيب</div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="ia-section">
+    <h2>نبذة عن الجماعة</h2>
+    <p>
+      جماعة إنشادن هي جماعة قروية مغربية تابعة لإقليم شتوكة آيت باها، بجهة سوس ماسة.
+      أحدثت سنة 1959، وتمتد على مساحة تقدر بحوالي <strong>141.7 كيلومتر مربع</strong>،
+      وتضم ساكنة تقدر بحوالي <strong>42,724 نسمة</strong> حسب الإحصاء العام للسكان والسكنى لسنة 2024،
+      موزعة على <strong>11,959 أسرة</strong>.
+    </p>
+    <p>
+      تتميز الجماعة بموقعها الاستراتيجي في سهل اشتوكة، وقرب غالبية الدواوير من الطريق الوطنية رقم 1
+      الرابطة بين أكادير والجنوب، إلى جانب إطلالتها على واجهة بحرية واعدة على المحيط الأطلسي.
+      كما تحتضن الجماعة عددًا من الضيعات الفلاحية العصرية ومحطة لتحلية مياه البحر،
+      مما يجعلها جماعة واعدة على مستوى التنمية المحلية.
+    </p>
+  </section>
+
+  <!-- FIGURES -->
+  <section class="ia-section">
+    <h2>جماعة إنشادن بالأرقام</h2>
+    <div class="ia-stats">
+      <div class="ia-stat">
+        <span class="ia-stat-num" data-count="42724">42,724</span>
+        <span class="ia-stat-label">نسمة (إحصاء 2024)</span>
+      </div>
+      <div class="ia-stat">
+        <span class="ia-stat-num">141.7</span>
+        <span class="ia-stat-label">كم² المساحة</span>
+      </div>
+      <div class="ia-stat">
+        <span class="ia-stat-num" data-count="11959">11,959</span>
+        <span class="ia-stat-label">أسرة (2024)</span>
+      </div>
+      <div class="ia-stat">
+        <span class="ia-stat-num">3</span>
+        <span class="ia-stat-label">مراكز رئيسية</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOUARS -->
+  <section class="ia-section">
+    <h2>الدواوير والمراكز</h2>
+    <p>تتكون جماعة إنشادن من عدة دواوير ومراكز رئيسية، من بينها:</p>
+    <ul class="ia-list">
+      <li>أربعاء آيت بوالطيب (مقر الجماعة)</li>
+      <li>تن منصور</li>
+      <li>البويبات</li>
+      <li>تونف</li>
+      <li>توكيمت</li>
+      <li>اسحنان</li>
+      <li>إحنترن</li>
+      <li>إمجاض</li>
+      <li>تكضيشت</li>
+      <li>القصبة</li>
+    </ul>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="ia-section">
+    <h2>مهام الجماعة</h2>
+    <p>تسهر جماعة إنشادن على تقديم مجموعة من الخدمات الإدارية للمواطنين، من بينها:</p>
+    <ul class="ia-list">
+      <li>خدمات الحالة المدنية</li>
+      <li>التعمير والوثائق التعميرية</li>
+      <li>الضرائب والرسوم الجماعية</li>
+      <li>استقبال العرائض والشكايات</li>
+      <li>النظافة والبيئة</li>
+      <li>التنمية المحلية</li>
+      <li>التعاون مع الجمعيات</li>
+      <li>دعم التعليم والنقل المدرسي</li>
+    </ul>
+  </section>
+
+  <!-- MAP -->
+  <section class="ia-section">
+    <h2>الموقع الجغرافي</h2>
+    <p>
+      تقع جماعة إنشادن في سهل اشتوكة، على بعد حوالي 35 كيلومترًا جنوب شرق مدينة أكادير،
+      على الطريق الوطنية رقم 1.
+      <br>
+      <strong>الإحداثيات:</strong> 30°05′59″N 9°33′18″W
+    </p>
+    <div class="ia-map-wrap">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2137.1513335902964!2d-9.5551778!3d30.099834!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb394b033e15363%3A0xc0bc7694ad38ee45!2sCommune%20rurale%20Inchaden!5e1!3m2!1sen!2sma!4v1792163921642!5m2!1sen!2sma"
+        width="100%"
+        height="450"
+        style="border:0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        title="خريطة جماعة إنشادن - المقر الرسمي">
+      </iframe>
+    </div>
+    <p class="ia-map-note">
+      <a href="https://www.google.com/maps/place/Commune+rurale+Inchaden/@30.099834,-9.5551778,17z" target="_blank" rel="noopener">
+        📍 عرض المقر الرسمي على خرائط Google
+      </a>
+    </p>
+  </section>
+
+  <!-- VISION -->
+  <section class="ia-section">
+    <h2>رؤيتنا</h2>
+    <p>
+      نعمل من أجل تنمية مستدامة وشاملة تخدم المواطن، وتعزز الشفافية وتقريب الإدارة من المواطن،
+      تحقيقًا للتوجيهات الملكية السامية لصاحب الجلالة الملك محمد السادس نصره الله وأيده،
+      في ما يخص النموذج التنموي الجديد.
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="ia-section">
+    <h2>معلومات الاتصال</h2>
+    <div class="ia-contact">
+      <div class="ia-contact-item">
+        <div class="ia-contact-icon">📍</div>
+        <div class="ia-contact-body">
+          <strong>مقر الجماعة</strong>
+          <p>أربعاء آيت بوالطيب، إقليم شتوكة آيت باها</p>
+        </div>
+      </div>
+      <div class="ia-contact-item">
+        <div class="ia-contact-icon">📞</div>
+        <div class="ia-contact-body">
+          <strong>الهاتف</strong>
+          <p>0528209160</p>
+        </div>
+      </div>
+      <div class="ia-contact-item">
+        <div class="ia-contact-icon">✉️</div>
+        <div class="ia-contact-body">
+          <strong>البريد الإلكتروني</strong>
+          <p>contact@incheden.ma</p>
+        </div>
+      </div>
+      <div class="ia-contact-item">
+        <div class="ia-contact-icon">🕐</div>
+        <div class="ia-contact-body">
+          <strong>أوقات العمل</strong>
+          <p>الاثنين – الجمعة</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ═══ JAVASCRIPT ═══ -->
+<script>
+//<![CDATA[
+(function(){
+  'use strict';
+
+  function onReady(fn){
+    if (document.readyState !== 'loading') fn();
+    else document.addEventListener('DOMContentLoaded', fn);
+  }
+
+  onReady(function(){
+    var root = document.querySelector('.inchaden-about');
+    if (!root) return;
+
+    /* Fade-in-on-scroll */
+    var sections = root.querySelectorAll('.ia-section, .ia-photo-banner');
+    sections.forEach(function(sec){
+      sec.style.opacity = '0';
+      sec.style.transform = 'translateY(20px)';
+      sec.style.transition = 'opacity .6s ease, transform .6s ease';
+    });
+
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if (e.isIntersecting){
+            e.target.style.opacity = '1';
+            e.target.style.transform = 'translateY(0)';
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+      sections.forEach(function(s){ io.observe(s); });
+    } else {
+      sections.forEach(function(s){
+        s.style.opacity = '1';
+        s.style.transform = 'translateY(0)';
+      });
+    }
+
+    /* Count-up animation */
+    var counters = root.querySelectorAll('[data-count]');
+    if (!counters.length || !('IntersectionObserver' in window)) return;
+
+    function animateNumber(el){
+      var target = parseInt(el.getAttribute('data-count'), 10);
+      if (isNaN(target)) return;
+      var duration = 1400;
+      var start = performance.now();
+
+      function tick(now){
+        var p = Math.min((now - start) / duration, 1);
+        var eased = 1 - Math.pow(1 - p, 4);
+        var current = Math.floor(eased * target);
+        el.textContent = current.toLocaleString('en-US');
+        if (p < 1) requestAnimationFrame(tick);
+        else el.textContent = target.toLocaleString('en-US');
+      }
+      requestAnimationFrame(tick);
+    }
+
+    var co = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){
+          animateNumber(e.target);
+          co.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(function(c){ co.observe(c); });
+  });
+})();
+//]]>
+</script>
+
+<!-- ═══ JSON-LD SEO ═══ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentOrganization",
+  "name": "جماعة إنشادن",
+  "alternateName": "Commune d'Inchaden",
+  "url": "https://commune-inchaden.blogspot.com",
+  "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRYvwhO2VsYFbmG0MT4SFptRr3X_GpQp3wceiNcuyqodYYZNSmxee1y7HRUeIbjNM6Ygd9BIkpUqDW0IrcXJn3-vJYnMx-HRuP9eLbKwEM6lM8S5L-o0ACfu_2Q9-3t_XvLW0Swxg4fXQ4LzaS2SXdJBfgxmxP2pArlXJei6w7TRyby-goAmiRW5MTVlCc/s1600/Capture%20d%27%C3%A9cran%202026-10-16%20090508.png",
+  "description": "البوابة الرسمية لجماعة إنشادن، إقليم شتوكة آيت باها، جهة سوس ماسة، المملكة المغربية.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "أربعاء آيت بوالطيب",
+    "addressLocality": "إنشادن",
+    "addressRegion": "سوس ماسة",
+    "postalCode": "87272",
+    "addressCountry": "MA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 30.099834,
+    "longitude": -9.5551778
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+212528209160",
+    "contactType": "customer service",
+    "areaServed": "MA",
+    "availableLanguage": ["Arabic","French","Tamazight"]
+  },
+  "sameAs": [
+    "https://www.facebook.com/commune.inchaden"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Place",
+  "name": "جماعة إنشادن",
+  "description": "جماعة قروية تابعة لإقليم شتوكة آيت باها، جهة سوس ماسة، المغرب.",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 30.099834,
+    "longitude": -9.5551778
+  },
+  "containedInPlace": {
+    "@type": "AdministrativeArea",
+    "name": "إقليم شتوكة آيت باها"
+  },
+  "population": "42724",
+  "area": {
+    "@type": "QuantitativeValue",
+    "value": 141.7,
+    "unitCode": "KMK"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "الرئيسية",
+      "item": "https://commune-inchaden.blogspot.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "من نحن",
+      "item": "https://commune-inchaden.blogspot.com/p/about.html"
+    }
+  ]
+}
+</script>
