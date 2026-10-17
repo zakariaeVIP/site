@@ -1,0 +1,1076 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<meta content='#00c76a' name='theme-color'/>
+<b:include data='blog' name='all-head-content'/>
+
+<link expr:href='data:blog.url' rel='canonical'/>
+<meta content='ar' http-equiv='content-language'/>
+<meta content='MA' name='geo.placename'/>
+<meta content='MA' name='geo.region'/>
+<b:if cond='data:blog.pageType == &quot;item&quot; or data:blog.pageType == &quot;static_page&quot;'>
+<meta content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' name='robots'/>
+<b:else/>
+<b:if cond='data:blog.searchLabel'>
+<meta content='noindex, follow' name='robots'/>
+<b:else/>
+<b:if cond='data:blog.searchQuery'>
+<meta content='noindex, follow' name='robots'/>
+<b:else/>
+<meta content='index, follow, max-image-preview:large, max-snippet:-1' name='robots'/>
+</b:if>
+</b:if>
+</b:if>
+<b:if cond='data:blog.metaDescription'>
+<meta expr:content='data:blog.metaDescription' name='description'/>
+<b:else/>
+<meta content='مقاطع شورت وبطاقات أحاديث صحيحة مع روابط تحميل لصنّاع المحتوى. محتوى إسلامي هادف لنشر السنة النبوية وتيسير الوصول إليها.' name='description'/>
+</b:if>
+<meta content='القرآن الكريم, حديث نبوي, مواعظ مؤثرة, خطب دينية, تلاوة خاشعة, أدعية, أذكار, أناشيد دينية, إسلاميات, زكرياء المعتصم' name='keywords'/>
+<meta content='زكرياء المعتصم' name='author'/>
+<meta expr:content='data:blog.title' property='og:site_name'/>
+<b:if cond='data:blog.pageName'>
+<meta expr:content='data:blog.pageName' property='og:title'/>
+<b:else/>
+<meta expr:content='data:blog.title' property='og:title'/>
+</b:if>
+<b:if cond='data:blog.metaDescription'>
+<meta expr:content='data:blog.metaDescription' property='og:description'/>
+<b:else/>
+<meta content='مقاطع شورت وبطاقات أحاديث صحيحة مع روابط تحميل لصنّاع المحتوى الإسلامي.' property='og:description'/>
+</b:if>
+<meta expr:content='data:blog.url' property='og:url'/>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<meta content='article' property='og:type'/>
+<b:else/>
+<meta content='website' property='og:type'/>
+</b:if>
+<meta content='ar_AR' property='og:locale'/>
+<b:if cond='data:blog.postImageUrl'>
+<meta expr:content='data:blog.postImageUrl' property='og:image'/>
+<meta content='1200' property='og:image:width'/>
+<meta content='630' property='og:image:height'/>
+<meta content='summary_large_image' name='twitter:card'/>
+<meta expr:content='data:blog.postImageUrl' name='twitter:image'/>
+<b:else/>
+<meta content='summary' name='twitter:card'/>
+</b:if>
+<b:if cond='data:blog.pageName'>
+<meta expr:content='data:blog.pageName' name='twitter:title'/>
+<b:else/>
+<meta expr:content='data:blog.title' name='twitter:title'/>
+</b:if>
+<b:if cond='data:blog.metaDescription'>
+<meta expr:content='data:blog.metaDescription' name='twitter:description'/>
+</b:if>
+<link href='https://blogger.googleusercontent.com' rel='preconnect'/>
+<link href='https://i.ytimg.com' rel='preconnect'/>
+<link href='https://unavatar.io' rel='preconnect'/>
+<link href='https://wsrv.nl' rel='preconnect'/>
+<link href='https://www.googleapis.com' rel='preconnect'/>
+<link expr:href='data:blog.homepageUrl + &quot;sitemap.xml&quot;' rel='sitemap' type='application/xml'/>
+
+<link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'/>
+<link href='/favicon.ico' rel='apple-touch-icon'/>
+
+<title>
+  <b:if cond='data:view.isHomepage'>
+    <data:blog.title/> | القرآن والأحاديث بالفيديو
+  <b:else/>
+    <data:blog.pageName/> | <data:blog.title/>
+  </b:if>
+</title>
+<link href='https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&amp;display=swap' rel='stylesheet'/>
+<link href='https://fonts.gstatic.com' rel='preconnect'/>
+
+<b:skin><![CDATA[
+*, *::before, *::after { box-sizing:border-box; }
+html { margin:0; padding:0; scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+body { margin:0; padding:0; font-family:'Cairo',system-ui,-apple-system,'Segoe UI',Tahoma,Arial,sans-serif; background:#f1f5f4; color:#16241f; direction:rtl; text-align:right; line-height:1.9; font-size:16px; overflow-x:hidden; }
+img { max-width:100%; height:auto; display:block; border:0; }
+a { color:#0b8f4f; text-decoration:none; transition:color .25s ease, background .25s ease; }
+a:hover { color:#00c76a; }
+ul, ol { list-style:none; margin:0; padding:0; }
+h1, h2, h3, h4 { margin:0 0 12px; line-height:1.5; font-weight:800; }
+p { margin:0 0 14px; }
+button, input, textarea, select { font-family:inherit; }
+.container { max-width:1180px; margin:0 auto; padding:0 16px; width:100%; }
+.section { padding:6px 0 22px; }
+.hidden-section { display:none !important; height:0 !important; overflow:hidden !important; margin:0 !important; padding:0 !important; }
+.site-header { background:linear-gradient(135deg,#0d2b21 0%,#103f2e 55%,#0b5c3c 100%); color:#fff; position:sticky; top:0; z-index:999; box-shadow:0 2px 16px rgba(0,0,0,.22); margin:0; padding:0; }
+.header-inner { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:14px; min-height:76px; padding:8px 0; }
+.brand { flex:0 0 auto; order:1; }
+.brand-link { display:flex; align-items:center; gap:10px; color:#fff !important; font-weight:900; font-size:22px; letter-spacing:-.3px; }
+.brand-text { white-space:nowrap; }
+.main-nav { order:2; margin-inline-start:16px; margin-inline-end:auto; }
+.nav-list { display:flex; align-items:center; gap:4px; flex-wrap:wrap; }
+.nav-list a { display:block; padding:8px 15px; border-radius:9px; color:#dff5ea !important; font-weight:600; font-size:15px; white-space:nowrap; }
+.nav-list a:hover { background:#00c76a; color:#052b1e !important; }
+.nav-toggle { display:none; background:#00c76a; border:0; color:#04241a; font-size:20px; font-weight:700; border-radius:10px; width:44px; height:44px; cursor:pointer; margin-inline-start:auto; order:1; }
+.search-form { order:3; display:flex; align-items:center; background:rgba(255,255,255,.10); border:1px solid rgba(0,199,106,.5); border-radius:30px; padding:3px; min-width:250px; }
+.search-form:focus-within { border-color:#00c76a; background:rgba(255,255,255,.16); }
+.search-form input { flex:1; min-width:0; border:0; outline:0; background:transparent; color:#fff; padding:8px 16px; font-size:14px; }
+.search-form input::placeholder { color:#b9d8cc; }
+.search-form button { border:0; cursor:pointer; background:#00c76a; color:#04241a; font-weight:700; padding:8px 18px; border-radius:24px; font-size:14px; }
+.search-form button:hover { background:#05a85b; color:#fff; }
+.section-head { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin:30px 0 18px; padding-bottom:10px; border-bottom:2px solid #e2ebe7; }
+.section-title { font-size:22px; font-weight:800; color:#0d2b21; margin:0; display:flex; align-items:center; gap:10px; }
+.section-title::before { content:''; width:6px; height:26px; border-radius:4px; background:linear-gradient(180deg,#00c76a,#0b8f4f); display:inline-block; }
+.section-more { font-size:13.5px; font-weight:700; color:#0b8f4f; background:#e6f8ef; padding:6px 16px; border-radius:20px; }
+.section-more:hover { background:#00c76a; color:#04241a; }
+.cards-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:18px; }
+.card { background:#fff; border-radius:14px; overflow:hidden; box-shadow:0 6px 20px rgba(13,43,33,.08); transition:transform .3s ease, box-shadow .3s ease; display:flex; flex-direction:column; }
+.card:hover { transform:translateY(-5px); box-shadow:0 16px 32px rgba(13,43,33,.16); }
+.card-thumb { position:relative; display:block; width:100%; aspect-ratio:16/9; background:linear-gradient(135deg,#0d2b21,#0f5c3d); overflow:hidden; }
+.card-img { width:100%; height:100%; object-fit:cover; transition:transform .45s ease; }
+.card:hover .card-img { transform:scale(1.07); }
+.card-noimg { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; color:#00c76a; font-size:34px; opacity:.85; }
+.card-body { padding:12px 14px 16px; flex:1; display:flex; flex-direction:column; }
+.card-title { font-size:15.5px; font-weight:700; line-height:1.65; margin:0 0 8px; }
+.card-title a { color:#12241d; }
+.card-title a:hover { color:#00c76a; }
+.card-meta { font-size:12.5px; color:#7b8f87; margin-top:auto; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+.card-meta .cmt { display:inline-flex; align-items:center; gap:4px; font-weight:600; color:#0b8f4f; }
+.card-meta .cmt::before { content:'\1F4AC'; font-size:11px; }
+.loading, .empty-msg { grid-column:1 / -1; text-align:center; color:#7b8f87; padding:28px 10px; font-size:14px; background:#fff; border-radius:14px; }
+.main-content { padding:10px 16px 30px; }
+.post-single { background:#fff; border-radius:16px; padding:26px; box-shadow:0 6px 24px rgba(13,43,33,.07); }
+.post-title { font-size:28px; font-weight:900; color:#0d2b21; margin:0 0 14px; line-height:1.5; }
+.post-title a { color:#0d2b21; }
+.post-meta { display:flex; flex-wrap:wrap; gap:8px 14px; align-items:center; font-size:13px; color:#7b8f87; border-bottom:1px solid #eaf1ee; padding-bottom:14px; margin-bottom:20px; }
+.post-meta a { background:#e6f8ef; color:#0b8f4f; padding:3px 12px; border-radius:20px; font-weight:600; margin-inline-start:6px; font-size:12.5px; }
+.post-meta a:hover { background:#00c76a; color:#04241a; }
+.post-body { font-size:17px; line-height:2; color:#22332c; word-wrap:break-word; overflow-wrap:break-word; }
+.post-body img { border-radius:10px; margin:14px auto; }
+.post-body h2, .post-body h3, .post-body h4 { color:#0d2b21; margin-top:26px; }
+.post-body a { color:#0b8f4f; text-decoration:underline; }
+.post-body ul, .post-body ol { padding-inline-start:22px; margin-bottom:14px; }
+.post-body ul li { list-style:disc; }
+.post-body ol li { list-style:decimal; }
+.post-body blockquote { margin:18px 0; padding:14px 18px; background:#eefaf4; border-inline-start:5px solid #00c76a; border-radius:10px; color:#14523a; }
+.post-body table { width:100%; border-collapse:collapse; margin:16px 0; }
+.post-body td, .post-body th { border:1px solid #e2ebe7; padding:9px; text-align:right; }
+.post-body th { background:#eefaf4; }
+.youtube-container { position:relative; width:100%; padding-bottom:56.25%; height:0; overflow:hidden; margin:20px 0; border-radius:14px; background:#000; box-shadow:0 10px 26px rgba(13,43,33,.22); }
+.youtube-container iframe, .youtube-container object, .youtube-container embed, .youtube-container video { position:absolute; top:0; left:0; width:100%; height:100%; border:0; }
+.download-links { background:linear-gradient(135deg,#0d2b21 0%,#124a36 100%); border:1px solid rgba(0,199,106,.35); border-radius:16px; padding:20px; margin:26px 0; box-shadow:0 10px 26px rgba(13,43,33,.18); }
+.download-links h3, .download-links .dl-title { color:#fff; font-size:18px; font-weight:800; margin:0 0 14px; display:flex; align-items:center; gap:10px; }
+.download-links h3::before, .download-links .dl-title::before { content:'\2193'; width:32px; height:32px; border-radius:9px; background:#00c76a; color:#04241a; display:inline-flex; align-items:center; justify-content:center; font-size:16px; }
+.download-links a { display:flex; align-items:center; justify-content:space-between; gap:12px; background:rgba(255,255,255,.07); color:#e8fff5 !important; border:1px solid rgba(0,199,106,.3); border-radius:11px; padding:12px 18px; margin-bottom:10px; font-weight:700; font-size:15px; transition:background .25s ease, transform .25s ease; }
+.download-links a:last-child { margin-bottom:0; }
+.download-links a:hover { background:#00c76a; color:#04241a !important; transform:translateX(-5px); border-color:#00c76a; }
+.download-links a::after { content:'\2B07'; font-size:16px; }
+.site-footer { background:#0d2b21; color:#a9c6ba; margin-top:44px; padding:30px 0 24px; text-align:center; font-size:14px; border-top:4px solid #00c76a; }
+.site-footer a { color:#00c76a; font-weight:700; }
+.site-footer a:hover { color:#fff; }
+.footer-links { display:flex; justify-content:center; flex-wrap:wrap; gap:8px 18px; margin-bottom:12px; }
+.footer-links a { color:#cfe9de; font-weight:600; }
+.footer-links a:hover { color:#00c76a; }
+.about-page .post-title { text-align:center; margin-bottom:8px; }
+.about-page .post-title::after { content:''; display:block; width:70px; height:4px; background:linear-gradient(90deg,#00c76a,#0b8f4f); border-radius:4px; margin:12px auto 0; }
+.yt-hero { background:linear-gradient(135deg,#0d2b21 0%,#124a36 100%); border-radius:16px; padding:26px; margin:24px 0; display:flex; align-items:center; gap:22px; flex-wrap:wrap; box-shadow:0 12px 32px rgba(13,43,33,.2); }
+.yt-avatar { width:100px; height:100px; border-radius:50%; flex-shrink:0; background:linear-gradient(145deg,#00c76a,#06a458); color:#04241a; display:flex; align-items:center; justify-content:center; font-size:44px; font-weight:900; box-shadow:0 8px 22px rgba(0,199,106,.45), 0 0 0 4px rgba(0,199,106,.2); }
+.yt-meta { flex:1; min-width:220px; }
+.yt-meta h2 { color:#fff; margin:0 0 6px; font-size:26px; font-weight:900; }
+.yt-meta .yt-handle { color:#00c76a; font-size:15px; font-weight:600; margin-bottom:10px; display:block; }
+.yt-meta .yt-stats { color:#b9d8cc; font-size:14px; margin-bottom:16px; }
+.yt-meta .yt-stats span { display:inline-block; margin-inline-end:16px; }
+.yt-meta .yt-stats strong { color:#fff; font-weight:800; }
+.yt-sub-btn { display:inline-flex; align-items:center; gap:8px; background:#00c76a; color:#04241a !important; padding:10px 22px; border-radius:26px; font-weight:800; font-size:15px; text-decoration:none !important; transition:transform .25s ease, background .25s ease, box-shadow .25s ease; box-shadow:0 6px 16px rgba(0,199,106,.35); }
+.yt-sub-btn:hover { background:#05a85b; color:#fff !important; transform:translateY(-2px); box-shadow:0 10px 24px rgba(0,199,106,.5); }
+.yt-sub-btn::before { content:'\25B6'; font-size:12px; }
+.about-card { background:#f8fbf9; border-radius:14px; padding:24px; border-inline-start:5px solid #00c76a; font-size:16px; line-height:2; color:#22332c; margin-bottom:18px; }
+.about-card h3 { color:#0d2b21; font-size:19px; margin:0 0 14px; display:flex; align-items:center; gap:10px; }
+.about-card h3::before { content:''; width:6px; height:22px; border-radius:4px; background:linear-gradient(180deg,#00c76a,#0b8f4f); }
+.about-list { list-style:none; padding:0; margin:16px 0; }
+.about-list li { padding:12px 16px; margin-bottom:8px; background:#fff; border-radius:10px; font-size:15.5px; line-height:1.7; display:flex; align-items:center; gap:12px; box-shadow:0 2px 8px rgba(13,43,33,.05); transition:transform .25s ease; }
+.about-list li:hover { transform:translateX(-5px); }
+.about-list .ico { font-size:22px; flex-shrink:0; }
+.about-card em { color:#0b8f4f; font-style:normal; font-weight:700; }
+.about-quote { background:#eefaf4; padding:16px 20px; border-radius:10px; border-inline-start:4px solid #00c76a; color:#14523a; font-weight:600; margin:16px 0; }
+.about-cta { text-align:center; padding:20px; background:linear-gradient(135deg,#0d2b21,#124a36); border-radius:14px; color:#fff; margin-top:20px; }
+.about-cta p { color:#cfe9de; margin:0 0 14px; font-size:15px; }
+.about-cta strong { color:#fff; }
+.about-hashtags { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin-top:18px; padding-top:18px; border-top:1px dashed rgba(0,199,106,.3); }
+.about-hashtags span { background:rgba(0,199,106,.15); color:#00c76a; padding:5px 14px; border-radius:20px; font-size:13px; font-weight:600; }
+
+/* ============ COMMENTS SECTION ============ */
+.post-comments { margin-top:30px; padding-top:22px; border-top:2px solid #e2ebe7; }
+.post-comments h3 { font-size:20px; font-weight:800; color:#0d2b21; margin:0 0 16px; display:flex; align-items:center; gap:10px; }
+.post-comments h3::before { content:''; width:6px; height:22px; border-radius:4px; background:linear-gradient(180deg,#00c76a,#0b8f4f); }
+.comments-cta { text-align:center; padding:34px 20px; background:#f8fbf9; border-radius:14px; border:1px dashed #c8d8d0; }
+.comments-cta p { font-size:15px; color:#4a5a52; margin-bottom:18px; }
+.comments-cta a.comments-btn { display:inline-flex; align-items:center; gap:10px; background:#00c76a; color:#04241a !important; padding:14px 32px; border-radius:28px; font-weight:800; font-size:16px; text-decoration:none !important; box-shadow:0 8px 20px rgba(0,199,106,.35); transition:transform .25s ease, background .25s ease, box-shadow .25s ease; }
+.comments-cta a.comments-btn:hover { background:#05a85b; color:#fff !important; transform:translateY(-3px); box-shadow:0 12px 28px rgba(0,199,106,.5); }
+.comments-cta a.comments-btn::before { content:'\1F4AC'; font-size:18px; }
+
+.theme-toggle { order:4; background:rgba(255,255,255,.10); border:1px solid rgba(0,199,106,.5); color:#fff; width:42px; height:42px; border-radius:50%; cursor:pointer; font-size:18px; display:flex; align-items:center; justify-content:center; transition:background .25s ease, transform .25s ease; flex-shrink:0; padding:0; }
+.theme-toggle:hover { background:#00c76a; color:#04241a; transform:scale(1.05); }
+.theme-toggle::before { content:'\1F319'; font-size:20px; line-height:1; }
+body.dark-mode .theme-toggle::before { content:'\2600\FE0F'; }
+
+.scroll-top { position:fixed; bottom:24px; left:24px; width:48px; height:48px; border-radius:50%; background:linear-gradient(145deg,#00c76a,#06a458); color:#04241a; border:0; cursor:pointer; display:flex; align-items:center; justify-content:center; font-size:22px; font-weight:900; box-shadow:0 8px 22px rgba(0,199,106,.45); opacity:0; visibility:hidden; transform:translateY(10px); transition:opacity .3s ease, transform .3s ease, visibility .3s; z-index:998; padding:0; }
+.scroll-top.show { opacity:1; visibility:visible; transform:translateY(0); }
+.scroll-top:hover { transform:translateY(-3px) scale(1.05); box-shadow:0 12px 28px rgba(0,199,106,.55); }
+.scroll-top::before { content:'\2191'; line-height:1; }
+
+/* ============ DARK MODE — FIX LIGHT BOXES INSIDE POSTS ============ */
+body.dark-mode .post-body [style*="background:#f"],
+body.dark-mode .post-body [style*="background: #f"],
+body.dark-mode .post-body [style*="background:#e"],
+body.dark-mode .post-body [style*="background: #e"],
+body.dark-mode .post-body [style*="background:#d"],
+body.dark-mode .post-body [style*="background: #d"],
+body.dark-mode .post-body [style*="background-color:#f"],
+body.dark-mode .post-body [style*="background-color: #f"],
+body.dark-mode .post-body [style*="background-color:#e"],
+body.dark-mode .post-body [style*="background-color: #e"],
+body.dark-mode .post-body [style*="background-color:#d"],
+body.dark-mode .post-body [style*="background-color: #d"],
+body.dark-mode .post-body [style*="background:#FFF"],
+body.dark-mode .post-body [style*="background: #FFF"],
+body.dark-mode .post-body [style*="background:#fff"],
+body.dark-mode .post-body [style*="background: #fff"],
+body.dark-mode .post-body [style*="background:white"],
+body.dark-mode .post-body [style*="background: white"],
+body.dark-mode .post-body [style*="background:rgb(2"],
+body.dark-mode .post-body [style*="background: rgb(2"],
+body.dark-mode .post-body [style*="background-color:rgb(2"],
+body.dark-mode .post-body [style*="background-color: rgb(2"] {
+  background:#4a4a48 !important;
+  color:#e8e6e3 !important;
+  border-color:#565654 !important;
+}
+
+body.dark-mode .post-body [style*="background:#00c76a"],
+body.dark-mode .post-body [style*="background: #00c76a"],
+body.dark-mode .post-body [style*="background:#0b8f4f"],
+body.dark-mode .post-body [style*="background: #0b8f4f"] {
+  background:#0d4a32 !important;
+  color:#e8e6e3 !important;
+}
+
+body.dark-mode .post-body [style*="color:#1"],
+body.dark-mode .post-body [style*="color: #1"],
+body.dark-mode .post-body [style*="color:#0"],
+body.dark-mode .post-body [style*="color: #0"],
+body.dark-mode .post-body [style*="color:#2"],
+body.dark-mode .post-body [style*="color: #2"],
+body.dark-mode .post-body [style*="color:#3"],
+body.dark-mode .post-body [style*="color: #3"],
+body.dark-mode .post-body [style*="color:black"],
+body.dark-mode .post-body [style*="color: black"],
+body.dark-mode .post-body [style*="color:#4"],
+body.dark-mode .post-body [style*="color: #4"] {
+  color:#e8e6e3 !important;
+}
+
+/* ============ DARK MODE — BATTLESHIP GRAY ============ */
+body { transition:background-color .35s ease, color .35s ease; }
+body.dark-mode { background:#3d3d3b; color:#e8e6e3; }
+
+body.dark-mode .site-header { background:linear-gradient(135deg,#1f2823 0%,#2b3a33 55%,#1d3329 100%); box-shadow:0 2px 16px rgba(0,0,0,.4); }
+body.dark-mode .brand-text { color:#f0ede8 !important; }
+body.dark-mode .nav-list a { color:#d4d2cd !important; }
+body.dark-mode .nav-list a:hover { background:#00c76a; color:#04241a !important; }
+body.dark-mode .search-form { background:rgba(255,255,255,.06); border-color:rgba(0,199,106,.35); }
+body.dark-mode .search-form input { color:#e8e6e3; }
+body.dark-mode .search-form input::placeholder { color:#8a8885; }
+
+body.dark-mode .section-head { border-bottom-color:#4a4a48; }
+body.dark-mode .section-title { color:#f0ede8; }
+body.dark-mode .section-more { background:#4a4a48; color:#00c76a; }
+body.dark-mode .section-more:hover { background:#00c76a; color:#04241a; }
+
+body.dark-mode .card, body.dark-mode .post-single { background:#4a4a48; border:1px solid #565654; box-shadow:0 6px 20px rgba(0,0,0,.3); }
+body.dark-mode .card:hover { box-shadow:0 16px 32px rgba(0,0,0,.45); }
+body.dark-mode .card-thumb { background:linear-gradient(135deg,#2a2a28,#3a3a38); }
+body.dark-mode .card-title a { color:#f0ede8; }
+body.dark-mode .card-title a:hover { color:#00c76a; }
+body.dark-mode .card-meta { color:#a8a5a0; }
+body.dark-mode .card-meta .cmt { color:#00c76a; }
+
+body.dark-mode .post-title, body.dark-mode .post-title a { color:#f0ede8; }
+body.dark-mode .post-meta { color:#a8a5a0; border-bottom-color:#565654; }
+body.dark-mode .post-meta a { background:#565654; color:#00c76a; }
+body.dark-mode .post-body { color:#dedbd6; }
+body.dark-mode .post-body h2, body.dark-mode .post-body h3, body.dark-mode .post-body h4 { color:#f0ede8; }
+body.dark-mode .post-body a { color:#00c76a; }
+body.dark-mode .post-body blockquote { background:#3d3d3b; color:#c8e6d5; border-inline-start-color:#00c76a; }
+body.dark-mode .post-body td, body.dark-mode .post-body th { border-color:#565654; }
+body.dark-mode .post-body th { background:#3d3d3b; }
+
+body.dark-mode .post-comments { border-top-color:#565654; }
+body.dark-mode .post-comments h3 { color:#f0ede8; }
+body.dark-mode .comments-cta { background:#3d3d3b; border-color:#565654; }
+body.dark-mode .comments-cta p { color:#a8a5a0; }
+
+body.dark-mode .loading, body.dark-mode .empty-msg { background:#4a4a48; color:#a8a5a0; border:1px solid #565654; }
+
+body.dark-mode .site-footer { background:#2a2a28; color:#a8a5a0; border-top-color:#00c76a; }
+body.dark-mode .footer-links a { color:#d4d2cd; }
+
+body.dark-mode .about-card { background:#4a4a48; color:#dedbd6; border:1px solid #565654; border-inline-start:5px solid #00c76a; }
+body.dark-mode .about-card h3 { color:#f0ede8; }
+body.dark-mode .about-card em { color:#00c76a; }
+body.dark-mode .about-list li { background:#3d3d3b; color:#dedbd6; border:1px solid #4a4a48; }
+body.dark-mode .about-quote { background:#3d3d3b; color:#c8e6d5; }
+body.dark-mode .yt-hero { background:linear-gradient(135deg,#2a2a28 0%,#3a3a38 100%); }
+
+@media (max-width:900px) {
+  .header-inner {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 6px;
+    padding: 8px 0;
+  }
+  .brand { order: 1; flex: 0 0 auto; margin: 0; margin-inline-end: auto; }
+  .theme-toggle { order: 2; flex: 0 0 auto; margin: 0; margin-inline-start: 0; margin-inline-end: 0; }
+  .nav-toggle { display: block; order: 3; flex: 0 0 auto; margin: 0; margin-inline-start: 0; }
+  .search-form { order: 4; width: 100%; min-width: 0; flex-basis: 100%; margin: 0; }
+  .main-nav { order: 5 !important; display: none; width: 100%; flex-basis: 100%; margin: 0; margin-inline-start: 0; margin-inline-end: 0; }
+  .main-nav.open { display: block; }
+  .nav-list { flex-direction: column; align-items: stretch; gap: 2px; padding: 8px 0 12px; }
+  .nav-list a { padding: 11px 14px; background: rgba(255,255,255,.05); }
+  .post-title { font-size: 23px; }
+  .post-single { padding: 18px; }
+}
+@media (max-width:600px) {
+  .yt-hero { flex-direction:column; text-align:center; padding:22px 18px; }
+  .yt-meta h2 { font-size:22px; }
+  .about-card { padding:18px; }
+}
+@media (max-width:520px) {
+  .cards-grid { grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:12px; }
+  .card-title { font-size:14px; }
+  .section-title { font-size:18px; }
+  .brand-text { font-size:18px; }
+  .post-body { font-size:16px; }
+}
+]]></b:skin>
+</head>
+<body>
+
+<header class='site-header'>
+  <div class='container header-inner'>
+    <div class='brand'>
+      <a class='brand-link' expr:href='data:blog.homepageUrl'>
+        <span class='brand-text'>زكرياء المعتصم</span>
+      </a>
+    </div>
+
+    <button aria-label='القائمة' class='nav-toggle' id='navToggle' type='button'>&#9776;</button>
+
+    <nav class='main-nav' id='mainNav'>
+      <ul class='nav-list'>
+        <li><a expr:href='data:blog.homepageUrl'>الرئيسية</a></li>
+        <li><a expr:href='data:blog.homepageUrl + &quot;search/label/القرآن&quot;'>القرآن</a></li>
+        <li><a expr:href='data:blog.homepageUrl + &quot;search/label/حديث&quot;'>أحاديث</a></li>
+        <li><a expr:href='data:blog.homepageUrl + &quot;p/contact.html&quot;'>من نحن</a></li>
+      </ul>
+    </nav>
+
+    <form action='/search' class='search-form' method='get' role='search'>
+      <input aria-label='ابحث في الموقع' autocomplete='off' name='q' placeholder='ابحث في الموقع...' type='text'/>
+      <button type='submit'>بحث</button>
+    </form>
+
+    <button aria-label='تبديل الوضع' class='theme-toggle' id='themeToggle' type='button'/>
+  </div>
+</header>
+
+<b:if cond='data:view.isHomepage'>
+  <div class='container'>
+    <section class='section'>
+      <div class='section-head'>
+        <h2 class='section-title'>أحدث مقاطع القرآن</h2>
+        <a class='section-more' expr:href='data:blog.homepageUrl + &quot;search/label/القرآن&quot;'>المزيد &#171;</a>
+      </div>
+      <div class='cards-grid' id='feed-quran'><div class='loading'>جار&#1613; تحميل المشاركات...</div></div>
+    </section>
+
+    <section class='section'>
+      <div class='section-head'>
+        <h2 class='section-title'>أحدث الأحاديث</h2>
+        <a class='section-more' expr:href='data:blog.homepageUrl + &quot;search/label/حديث&quot;'>المزيد &#171;</a>
+      </div>
+      <div class='cards-grid' id='feed-hadith'><div class='loading'>جار&#1613; تحميل المشاركات...</div></div>
+    </section>
+  </div>
+</b:if>
+
+<main class='main-content container'>
+  <div id='js-blog-area'><div class='loading'>جار&#1613; التحميل...</div></div>
+</main>
+
+<footer class='site-footer'>
+  <div class='container'>
+    <div class='footer-links'>
+      <a expr:href='data:blog.homepageUrl'>الرئيسية</a>
+      <a expr:href='data:blog.homepageUrl + &quot;search/label/القرآن&quot;'>القرآن</a>
+      <a expr:href='data:blog.homepageUrl + &quot;search/label/حديث&quot;'>أحاديث</a>
+      <a expr:href='data:blog.homepageUrl + &quot;p/contact.html&quot;'>من نحن</a>
+    </div>
+    <div>جميع الحقوق محفوظة &#169; <data:blog.title/> &#8212; <script>document.write(new Date().getFullYear());</script></div>
+  </div>
+</footer>
+
+<b:section class='hidden-section' id='hidden-section' name='Hidden' showaddelement='no'/>
+
+<script>
+//<![CDATA[
+(function () {
+  var toggle = document.getElementById('navToggle');
+  var nav = document.getElementById('mainNav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function () {
+      if (nav.className.indexOf('open') === -1) { nav.className = nav.className + ' open'; }
+      else { nav.className = nav.className.replace(' open', ''); }
+    });
+  }
+})();
+//]]>
+</script>
+
+<script>
+//<![CDATA[
+function upgradeBloggerUrl(url) {
+  if (!url) return '';
+  url = url.replace(/\/(s\d+|w\d+-h\d+[^\/]*)\//, '/w800-h450-c/');
+  return url;
+}
+
+function thumbUpgrade(entry) {
+  var content = '';
+  if (entry.content && entry.content.$t) content = entry.content.$t;
+  else if (entry.summary && entry.summary.$t) content = entry.summary.$t;
+
+  if (content) {
+    var m = content.match(/(?:youtube(?:-nocookie)?\.com\/(?:embed\/|watch\?v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+    if (m && m[1]) {
+      return 'https://i.ytimg.com/vi/' + m[1] + '/maxresdefault.jpg';
+    }
+  }
+
+  if (content) {
+    var imgMatch = content.match(/<img[^>]+src\s*=\s*["']([^"']+)["']/i);
+    if (imgMatch && imgMatch[1]) {
+      var src = imgMatch[1];
+      src = src.replace(/&amp;/g, '&');
+      if (src.indexOf('blogger.googleusercontent.com') !== -1 || src.indexOf('bp.blogspot.com') !== -1) {
+        return upgradeBloggerUrl(src);
+      }
+      return src;
+    }
+  }
+
+  if (!entry.media$thumbnail || !entry.media$thumbnail.url) return '';
+  var url = entry.media$thumbnail.url;
+
+  if (url.indexOf('ytimg.com') !== -1) {
+    return url.replace(/\/[a-z]*default\.jpg/, '/maxresdefault.jpg');
+  }
+
+  return upgradeBloggerUrl(url);
+}
+
+function getCommentCount(entry) {
+  if (entry['thr$total'] && entry['thr$total'].$t) {
+    return parseInt(entry['thr$total'].$t, 10) || 0;
+  }
+  return 0;
+}
+//]]>
+</script>
+
+<b:if cond='data:view.isHomepage'>
+<script>
+//<![CDATA[
+(function () {
+  function buildCard(entry) {
+    var link = '#', i;
+    if (entry.link) { for (i=0;i<entry.link.length;i++){ if (entry.link[i].rel === 'alternate'){ link = entry.link[i].href; break; } } }
+    var title = (entry.title && entry.title.$t) ? entry.title.$t : '';
+    var thumb = thumbUpgrade(entry);
+    var dateStr = '';
+    if (entry.published && entry.published.$t) { dateStr = entry.published.$t.substring(0,10); }
+    var comments = getCommentCount(entry);
+    var art = document.createElement('article'); art.className = 'card';
+    var a = document.createElement('a'); a.className = 'card-thumb'; a.href = link; a.title = title;
+    if (thumb) { var img = document.createElement('img'); img.className='card-img'; img.src=thumb; img.alt=title; img.loading='lazy'; a.appendChild(img); }
+    else { var ph = document.createElement('span'); ph.className='card-noimg'; ph.textContent='\u25B6'; a.appendChild(ph); }
+    art.appendChild(a);
+    var body = document.createElement('div'); body.className = 'card-body';
+    var h3 = document.createElement('h3'); h3.className = 'card-title';
+    var t = document.createElement('a'); t.href = link; t.textContent = title; h3.appendChild(t); body.appendChild(h3);
+    var meta = document.createElement('div'); meta.className='card-meta';
+    var ds = document.createElement('span'); ds.textContent = '\uD83D\uDCC5 ' + dateStr; meta.appendChild(ds);
+    var cs = document.createElement('span'); cs.className = 'cmt'; cs.textContent = comments; meta.appendChild(cs);
+    body.appendChild(meta);
+    art.appendChild(body); return art;
+  }
+  function loadFeed(labels, containerId, max) {
+    var box = document.getElementById(containerId); if (!box) return;
+    function showEmpty() {
+      box.innerHTML = '';
+      var p = document.createElement('p');
+      p.className = 'empty-msg';
+      p.textContent = 'لا توجد مشاركات في هذا القسم بعد.';
+      box.appendChild(p);
+    }
+    function tryLabel(idx) {
+      if (idx >= labels.length) { showEmpty(); return; }
+      var label = labels[idx];
+      var cbName = 'ytcb_' + containerId.replace(/-/g,'_') + '_' + idx + '_' + Math.random().toString(36).substr(2,5);
+      var done = false;
+      window[cbName] = function (json) {
+        if (done) return;
+        done = true;
+        var entries = (json && json.feed && json.feed.entry) ? json.feed.entry : [];
+        if (entries.length) {
+          box.innerHTML = '';
+          for (var i = 0; i < entries.length; i++) { box.appendChild(buildCard(entries[i])); }
+        } else { tryLabel(idx + 1); }
+        try { delete window[cbName]; } catch(e) { window[cbName] = null; }
+      };
+      var s = document.createElement('script');
+      s.src = '/feeds/posts/default/-/' + encodeURIComponent(label) + '?alt=json-in-script\u0026max-results=' + max + '\u0026callback=' + cbName;
+      s.async = true;
+      s.onerror = function() { if (!done) { done = true; tryLabel(idx + 1); } };
+      document.body.appendChild(s);
+    }
+    tryLabel(0);
+  }
+  function initFeeds() {
+    loadFeed(['القرآن', 'قرآن'], 'feed-quran', 8);
+    loadFeed(['حديث', 'أحاديث', 'الحديث'], 'feed-hadith', 8);
+  }
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initFeeds); } else { initFeeds(); }
+})();
+//]]>
+</script>
+</b:if>
+
+<script>
+//<![CDATA[
+(function () {
+  var area = document.getElementById('js-blog-area');
+  if (!area) return;
+
+  var path = window.location.pathname;
+  var search = window.location.search;
+  var pathLower = path.toLowerCase();
+
+  if (path === '/' || path === '') { area.style.display = 'none'; return; }
+
+  function esc(s) { return String(s).replace(/[&<>"']/g, function(c) {
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+  }); }
+
+  function entryLink(entry) {
+    var link = '#';
+    if (entry.link) {
+      for (var i = 0; i < entry.link.length; i++) {
+        if (entry.link[i].rel === 'alternate') { link = entry.link[i].href; break; }
+      }
+    }
+    return link;
+  }
+
+  function renderCard(entry) {
+    var link = entryLink(entry);
+    var title = entry.title ? entry.title.$t : '';
+    var thumb = thumbUpgrade(entry);
+    var date = entry.published ? entry.published.$t.substring(0,10) : '';
+    var comments = getCommentCount(entry);
+    return '<article class="card">' +
+      '<a class="card-thumb" href="' + link + '" title="' + esc(title) + '">' +
+        (thumb ? '<img class="card-img" src="' + thumb + '" alt="' + esc(title) + '" loading="lazy"/>' :
+                 '<span class="card-noimg">\u25B6</span>') +
+      '</a>' +
+      '<div class="card-body">' +
+        '<h3 class="card-title"><a href="' + link + '">' + title + '</a></h3>' +
+        '<div class="card-meta">' +
+          '<span>\uD83D\uDCC5 ' + date + '</span>' +
+          '<span class="cmt">' + comments + '</span>' +
+        '</div>' +
+      '</div>' +
+    '</article>';
+  }
+
+  function fetchFeed(url, cb, errCb) {
+    var cbName = 'jscb_' + Math.random().toString(36).substr(2, 9);
+    var timeout = setTimeout(function() {
+      if (window[cbName]) { window[cbName] = null; if (errCb) errCb(); }
+    }, 8000);
+    window[cbName] = function(json) {
+      clearTimeout(timeout);
+      var entries = (json && json.feed && json.feed.entry) ? json.feed.entry : [];
+      cb(entries);
+      try { delete window[cbName]; } catch(e) { window[cbName] = null; }
+    };
+    var s = document.createElement('script');
+    s.src = url + (url.indexOf('?') === -1 ? '?' : '&') + 'alt=json-in-script&callback=' + cbName;
+    s.async = true;
+    s.onerror = function() { clearTimeout(timeout); if (errCb) errCb(); };
+    document.body.appendChild(s);
+  }
+
+  var isPostPage = /\/\d{4}\/\d{2}\/[^\/]+\.html$/.test(pathLower);
+  var isLabelPage = path.indexOf('/search/label/') !== -1;
+  var isSearchPage = !isLabelPage && path.indexOf('/search') !== -1 && search.indexOf('q=') !== -1;
+  var isAboutPage = path.indexOf('/p/contact') !== -1 || path.indexOf('/p/about') !== -1;
+
+  if (isAboutPage) {
+    var YT_HANDLE = '%D8%B2%D9%83%D8%B1%D9%8A%D8%A7%D8%A1_%D8%A7%D9%84%D9%85%D8%B9%D8%AA%D8%B5%D9%85';
+    var YT_URL = 'https://www.youtube.com/@' + YT_HANDLE;
+    var YT_AVATAR = 'https://unavatar.io/youtube/@' + YT_HANDLE;
+
+    var html = '' +
+      '<article class="post-single about-page">' +
+        '<h1 class="post-title">من نحن</h1>' +
+        '<div class="yt-hero">' +
+          '<img id="yt-avatar" src="' + YT_AVATAR + '" alt="زكرياء المعتصم" ' +
+            'style="width:100px;height:100px;border-radius:50%;object-fit:cover;flex-shrink:0;display:block;background:linear-gradient(145deg,#00c76a,#06a458);box-shadow:0 8px 22px rgba(0,199,106,.45),0 0 0 4px rgba(0,199,106,.2);color:transparent;font-size:0"/>' +
+          '<div class="yt-meta">' +
+            '<h2>زكرياء المعتصم</h2>' +
+            '<span class="yt-handle">@\u0632\u0643\u0631\u064A\u0627\u0621_\u0627\u0644\u0645\u0639\u062A\u0635\u0645</span>' +
+            '<div class="yt-stats">' +
+              '<span><strong id="yt-subs">463</strong> \u0645\u0634\u062A\u0631\u0643</span>' +
+              '<span><strong id="yt-vids">66</strong> \u0641\u064A\u062F\u064A\u0648</span>' +
+            '</div>' +
+            '<a class="yt-sub-btn" href="' + YT_URL + '" target="_blank" rel="noopener">\u0627\u0634\u062A\u0631\u0643 \u0627\u0644\u0622\u0646</a>' +
+          '</div>' +
+        '</div>' +
+        '<div class="about-card">' +
+          '<h3>\u0645\u0646 \u0646\u062D\u0646</h3>' +
+          '<p>\u0645\u0631\u062D\u0628\u0627\u064B \u0628\u0643\u0645 \u0641\u064A \u0642\u0646\u0627\u062A\u064A\u060C \u0645\u0639\u0643\u0645 <strong>\u0632\u0643\u0631\u064A\u0627\u0621 \u0645\u0646 \u0627\u0644\u0645\u063A\u0631\u0628 \uD83C\uDDF2\uD83C\uDDE6</strong></p>' +
+          '<p>\u062A\u0647\u062F\u0641 \u0647\u0630\u0647 \u0627\u0644\u0642\u0646\u0627\u0629 \u0625\u0644\u0649 \u0646\u0634\u0631 \u0645\u062D\u062A\u0648\u0649 \u0625\u0633\u0644\u0627\u0645\u064A \u0647\u0627\u062F\u0641 \u0648\u0645\u0624\u062B\u0631\u060C \u064A\u0634\u0645\u0644:</p>' +
+          '<ul class="about-list">' +
+            '<li><span class="ico">\uD83D\uDCD6</span> \u0645\u0648\u0627\u0639\u0638 \u0648\u062E\u0637\u0628 \u0645\u0624\u062B\u0631\u0629 \u0644\u0643\u0628\u0627\u0631 \u0627\u0644\u0645\u0634\u0627\u064A\u062E \u0648\u0627\u0644\u0639\u0644\u0645\u0627\u0621</li>' +
+            '<li><span class="ico">\uD83D\uDD4C</span> \u062A\u0644\u0627\u0648\u0629 \u062E\u0627\u0634\u0639\u0629 \u0644\u0622\u064A\u0627\u062A \u0627\u0644\u0630\u0643\u0631 \u0627\u0644\u062D\u0643\u064A\u0645 \u062A\u0631\u062A\u0627\u062D \u0644\u0647\u0627 \u0627\u0644\u0642\u0644\u0648\u0628</li>' +
+            '<li><span class="ico">\uD83E\uDD32</span> \u0623\u062F\u0639\u064A\u0629 \u0648\u0623\u0630\u0643\u0627\u0631 \u0648\u0631\u0633\u0627\u0626\u0644 \u0637\u0645\u0623\u0646\u064A\u0646\u0629 \u0644\u0644\u0646\u0641\u0648\u0633 \u0627\u0644\u0645\u0636\u0637\u0631\u0628\u0629</li>' +
+            '<li><span class="ico">\uD83C\uDFA7</span> \u0623\u0646\u0627\u0634\u064A\u062F \u062F\u064A\u0646\u064A\u0629 \u0647\u0627\u062F\u0626\u0629 (\u0628\u062F\u0648\u0646 \u0625\u064A\u0642\u0627\u0639)</li>' +
+          '</ul>' +
+          '<div class="about-quote">\u0647\u062F\u0641\u064A \u0627\u0644\u062A\u0630\u0643\u064A\u0631 \u0628\u0627\u0644\u0644\u0647 \u0633\u0628\u062D\u0627\u0646\u0647 \u0648\u062A\u0639\u0627\u0644\u0649 \u0648\u0646\u0634\u0631 \u0627\u0644\u0641\u0627\u0626\u062F\u0629\u060C \u0641\u0640 <em>"\u0627\u0644\u062F\u0627\u0644 \u0639\u0644\u0649 \u0627\u0644\u062E\u064A\u0631 \u0643\u0641\u0627\u0639\u0644\u0647"</em>.</div>' +
+        '</div>' +
+        '<div class="about-card">' +
+          '<h3>\u0627\u062F\u0639\u0645\u0646\u0627</h3>' +
+          '<p>\u0644\u0627 \u062A\u0646\u0633\u0648\u0627 \u062F\u0639\u0645\u064A \u0628\u0627\u0644\u0627\u0634\u062A\u0631\u0627\u0643 \u0641\u064A \u0627\u0644\u0642\u0646\u0627\u0629 \u0648\u062A\u0641\u0639\u064A\u0644 \u062C\u0631\u0633 \u0627\u0644\u0625\u0634\u0639\u0627\u0631\u0627\u062A \uD83D\uDD14</p>' +
+          '<p>\u062C\u0632\u0627\u0643\u0645 \u0627\u0644\u0644\u0647 \u062E\u064A\u0631\u0627\u064B \u0648\u062C\u0639\u0644\u0647 \u0641\u064A \u0645\u064A\u0632\u0627\u0646 \u062D\u0633\u0646\u0627\u062A\u0643\u0645.</p>' +
+          '<div class="about-cta">' +
+            '<p><strong>\u0627\u0634\u062A\u0631\u0643 \u0627\u0644\u0622\u0646</strong> \u0648\u0643\u0646 \u062C\u0632\u0621\u0627\u064B \u0645\u0646 \u0627\u0644\u0639\u0627\u0626\u0644\u0629</p>' +
+            '<a class="yt-sub-btn" href="' + YT_URL + '" target="_blank" rel="noopener">\u0632\u064A\u0627\u0631\u0629 \u0627\u0644\u0642\u0646\u0627\u0629 \u0639\u0644\u0649 \u064A\u0648\u062A\u064A\u0648\u0628</a>' +
+          '</div>' +
+          '<div class="about-hashtags">' +
+            '<span>#\u0632\u0643\u0631\u064A\u0627\u0621_\u0627\u0644\u0645\u0639\u062A\u0635\u0645</span>' +
+            '<span>#\u0645\u0648\u0627\u0639\u0638_\u0645\u0624\u062B\u0631\u0629</span>' +
+            '<span>#\u062A\u0644\u0627\u0648\u0629_\u062E\u0627\u0634\u0639\u0629</span>' +
+            '<span>#\u0623\u0646\u0627\u0634\u064A\u062F_\u062F\u064A\u0646\u064A\u0629</span>' +
+          '</div>' +
+        '</div>' +
+      '</article>';
+    area.innerHTML = html;
+    document.title = '\u0645\u0646 \u0646\u062D\u0646 | ' + document.title.split('|').pop().trim();
+
+    var avEl = document.getElementById('yt-avatar');
+    if (avEl) {
+      var onFail = function () {
+        var div = document.createElement('div');
+        div.className = 'yt-avatar';
+        div.textContent = '\u0632';
+        if (avEl.parentNode) avEl.parentNode.replaceChild(div, avEl);
+      };
+      if (avEl.complete && avEl.naturalHeight === 0 && avEl.src) { onFail(); }
+      else { avEl.addEventListener('error', onFail); }
+    }
+
+    (function () {
+      var key = 'AIzaSyDHV-qCaUayPxXER43gW3FsHMzwZoe1eZo';
+      var handle = '@' + decodeURIComponent(YT_HANDLE);
+      var endpoint = 'https://www.googleapis.com/youtube/v3/channels' +
+        '?part=snippet,statistics' +
+        '&forHandle=' + encodeURIComponent(handle) +
+        '&key=' + key;
+
+      fetch(endpoint)
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          if (!data || !data.items || !data.items.length) {
+            console.warn('[YT] No channel data returned.');
+            return;
+          }
+          var ch = data.items[0];
+          var stats = ch.statistics || {};
+          var snip = ch.snippet || {};
+          var subsEl = document.getElementById('yt-subs');
+          var vidsEl = document.getElementById('yt-vids');
+          if (subsEl && stats.subscriberCount) subsEl.textContent = Number(stats.subscriberCount).toLocaleString('en-US');
+          if (vidsEl && stats.videoCount) vidsEl.textContent = Number(stats.videoCount).toLocaleString('en-US');
+          if (snip.thumbnails) {
+            var thumb = (snip.thumbnails.high || snip.thumbnails.medium || snip.thumbnails.default || {}).url;
+            var img = document.getElementById('yt-avatar');
+            if (thumb && img && img.src !== thumb) img.src = thumb;
+          }
+        })
+        .catch(function (err) { console.warn('[YT] API call failed:', err); });
+    })();
+
+    return;
+  }
+
+  if (isPostPage) {
+    area.innerHTML = '<div class="loading">جارٍ تحميل المشاركة...</div>';
+    fetchFeed('/feeds/posts/default?max-results=500', function(entries) {
+      var current = path;
+      var post = null;
+      for (var i = 0; i < entries.length; i++) {
+        var links = entries[i].link || [];
+        for (var j = 0; j < links.length; j++) {
+          if (links[j].rel === 'alternate' && links[j].href.indexOf(current) !== -1) {
+            post = entries[i]; break;
+          }
+        }
+        if (post) break;
+      }
+      if (!post) {
+        area.innerHTML = '<div class="post-single"><h1 class="post-title">المشاركة غير متاحة</h1><p class="empty-msg">لم يتم العثور على محتوى هذه المشاركة.</p></div>';
+        return;
+      }
+      var title = post.title ? post.title.$t : '';
+      var content = '';
+      if (post.content && post.content.$t) content = post.content.$t;
+      else if (post.summary && post.summary.$t) content = post.summary.$t;
+      var published = post.published ? post.published.$t.substring(0,10) : '';
+      var labels = '';
+      if (post.category && post.category.length) {
+        labels = post.category.map(function(c) {
+          return '<a href="/search/label/' + encodeURIComponent(c.term) + '">' + esc(c.term) + '</a>';
+        }).join('');
+      }
+
+      var postIdFull = post.id && post.id.$t ? post.id.$t : '';
+      var postId = '';
+      var blogId = '';
+      var idMatch = postIdFull.match(/post-(\d+)/);
+      if (idMatch) postId = idMatch[1];
+      var blogMatch = postIdFull.match(/blog-(\d+)/);
+      if (blogMatch) blogId = blogMatch[1];
+
+      var commentsHtml = '';
+      if (postId && blogId) {
+        var commentsUrl = 'https://www.blogger.com/comment.g?blogID=' + blogId + '&postID=' + postId;
+        commentsHtml = '<div class="post-comments">' +
+          '<h3>\u0627\u0644\u062a\u0639\u0644\u064a\u0642\u0627\u062a</h3>' +
+          '<div class="comments-cta">' +
+            '<p>\u0634\u0627\u0631\u0643\u0646\u0627 \u0631\u0623\u064a\u0643 \u0648\u062a\u0639\u0644\u064a\u0642\u0643 \u0639\u0644\u0649 \u0647\u0630\u0647 \u0627\u0644\u0645\u0634\u0627\u0631\u0643\u0629</p>' +
+            '<a class="comments-btn" href="' + commentsUrl + '" target="_blank" rel="noopener">\u0627\u0643\u062a\u0628 \u062a\u0639\u0644\u064a\u0642\u064b\u0627</a>' +
+          '</div>' +
+        '</div>';
+      }
+
+      area.innerHTML = '<article class="post-single">' +
+        '<h1 class="post-title">' + title + '</h1>' +
+        '<div class="post-meta"><span>\uD83D\uDCC5 ' + published + '</span>' + (labels ? '<span>' + labels + '</span>' : '') + '</div>' +
+        '<div class="post-body">' + content + '</div>' +
+        commentsHtml +
+      '</article>';
+      document.title = title + ' | ' + document.title.split('|').pop().trim();
+
+    }, function() {
+      area.innerHTML = '<div class="post-single"><p class="empty-msg">تعذّر تحميل المشاركة. حاول تحديث الصفحة.</p></div>';
+    });
+  }
+  else if (isLabelPage) {
+    var labelRaw = path.split('/search/label/')[1] || '';
+    labelRaw = labelRaw.split('?')[0].split('#')[0];
+    var labelName = decodeURIComponent(labelRaw);
+
+    area.innerHTML = '<div class="section-head"><h2 class="section-title">' + esc(labelName) + '</h2></div>' +
+      '<div class="cards-grid" id="js-label-grid"><div class="loading">جارٍ تحميل المشاركات...</div></div>';
+
+    var variations = [labelName];
+    if (labelName.indexOf('ال') === 0 && labelName.length > 2) {
+      variations.push(labelName.substring(2));
+    } else {
+      variations.push('ال' + labelName);
+    }
+    variations.push(labelName.trim());
+
+    function tryLabel(idx) {
+      if (idx >= variations.length) {
+        var grid = document.getElementById('js-label-grid');
+        if (grid) grid.innerHTML = '<p class="empty-msg">لا توجد مشاركات في هذا القسم بعد.</p>';
+        return;
+      }
+      var label = variations[idx];
+      fetchFeed('/feeds/posts/default/-/' + encodeURIComponent(label) + '?max-results=24', function(entries) {
+        if (entries.length) {
+          var grid = document.getElementById('js-label-grid');
+          if (grid) grid.innerHTML = entries.map(renderCard).join('');
+        } else { tryLabel(idx + 1); }
+      }, function() { tryLabel(idx + 1); });
+    }
+    tryLabel(0);
+  }
+  else if (isSearchPage) {
+    var q = search.split('q=')[1].split('&')[0];
+    q = decodeURIComponent(q.replace(/\+/g, ' '));
+    area.innerHTML = '<div class="section-head"><h2 class="section-title">نتائج البحث عن: ' + esc(q) + '</h2></div>' +
+      '<div class="cards-grid" id="js-search-grid"><div class="loading">جارٍ البحث...</div></div>';
+    fetchFeed('/feeds/posts/default?q=' + encodeURIComponent(q) + '&max-results=24', function(entries) {
+      var grid = document.getElementById('js-search-grid');
+      if (!entries.length) { grid.innerHTML = '<p class="empty-msg">لا توجد نتائج مطابقة.</p>'; return; }
+      grid.innerHTML = entries.map(renderCard).join('');
+    }, function() {
+      var grid = document.getElementById('js-search-grid');
+      if (grid) grid.innerHTML = '<p class="empty-msg">تعذّر البحث.</p>';
+    });
+  }
+  else {
+    area.innerHTML = '<div class="section-head"><h2 class="section-title">المشاركات</h2></div>' +
+      '<div class="cards-grid" id="js-default-grid"><div class="loading">جارٍ التحميل...</div></div>';
+    fetchFeed('/feeds/posts/default?max-results=24', function(entries) {
+      var grid = document.getElementById('js-default-grid');
+      if (!entries.length) { grid.innerHTML = '<p class="empty-msg">لا توجد مشاركات.</p>'; return; }
+      grid.innerHTML = entries.map(renderCard).join('');
+    }, function() {
+      var grid = document.getElementById('js-default-grid');
+      if (grid) grid.innerHTML = '<p class="empty-msg">تعذّر تحميل المشاركات.</p>';
+    });
+  }
+})();
+//]]>
+</script>
+
+<script>
+//<![CDATA[
+(function () {
+  'use strict';
+  function proxied(url) {
+    if (!url) return url;
+    if (url.indexOf('wsrv.nl') !== -1) return url;
+    if (!/^https?:\/\//i.test(url)) return url;
+    var clean = url.replace(/^https?:\/\//i, '');
+    return 'https://wsrv.nl/?url=' + encodeURIComponent(clean) + '&n=-1';
+  }
+  function triggerDownload(href, filename) {
+    fetch(proxied(href), { mode: 'cors', credentials: 'omit' })
+      .then(function (r) { if (!r.ok) throw new Error('proxy HTTP ' + r.status); return r.blob(); })
+      .then(function (blob) {
+        var u = URL.createObjectURL(blob);
+        var a = document.createElement('a');
+        a.href = u; a.download = filename || 'image.jpg';
+        a.style.display = 'none';
+        document.body.appendChild(a); a.click(); document.body.removeChild(a);
+        setTimeout(function () { URL.revokeObjectURL(u); }, 2000);
+      })
+      .catch(function (err) { console.warn('[download] failed:', err); window.open(href, '_blank', 'noopener'); });
+  }
+  function bind() {
+    var links = document.querySelectorAll('.download-links a[href]');
+    for (var i = 0; i < links.length; i++) {
+      (function (a) {
+        if (a.getAttribute('data-dl-bound') === '1') return;
+        a.setAttribute('data-dl-bound', '1');
+        a.addEventListener('click', function (e) {
+          e.preventDefault(); e.stopPropagation();
+          var href = a.getAttribute('href') || '';
+          if (!href || href.charAt(0) === '#') return;
+          triggerDownload(href, a.getAttribute('download') || 'image.jpg');
+          return false;
+        }, true);
+      })(links[i]);
+    }
+  }
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', bind); } else { bind(); }
+  try { new MutationObserver(bind).observe(document.body, { childList: true, subtree: true }); } catch (e) {}
+})();
+//]]>
+</script>
+
+<script>
+//<![CDATA[
+(function () {
+  'use strict';
+
+  var THEME_KEY = 'blogger-theme';
+  var body = document.body;
+  var toggle = document.getElementById('themeToggle');
+
+  function applyTheme(theme) {
+    if (theme === 'dark') body.classList.add('dark-mode');
+    else body.classList.remove('dark-mode');
+  }
+
+  var saved = null;
+  try { saved = localStorage.getItem(THEME_KEY); } catch (e) {}
+  if (saved !== 'dark' && saved !== 'light') {
+    saved = 'light';
+  }
+  applyTheme(saved);
+
+  if (toggle) {
+    toggle.addEventListener('click', function () {
+      var isDark = body.classList.contains('dark-mode');
+      var newTheme = isDark ? 'light' : 'dark';
+      applyTheme(newTheme);
+      try { localStorage.setItem(THEME_KEY, newTheme); } catch (e) {}
+    });
+  }
+
+  var btn = document.createElement('button');
+  btn.className = 'scroll-top';
+  btn.type = 'button';
+  btn.setAttribute('aria-label', '\u0627\u0644\u0639\u0648\u062f\u0629 \u0625\u0644\u0649 \u0627\u0644\u0623\u0639\u0644\u0649');
+  document.body.appendChild(btn);
+
+  function onScroll() {
+    if (window.scrollY > 300) btn.classList.add('show');
+    else btn.classList.remove('show');
+  }
+
+  var ticking = false;
+  window.addEventListener('scroll', function () {
+    if (!ticking) {
+      window.requestAnimationFrame(function () { onScroll(); ticking = false; });
+      ticking = true;
+    }
+  }, { passive: true });
+
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  onScroll();
+})();
+//]]>
+</script>
+
+<script>
+//<![CDATA[
+(function () {
+  'use strict';
+
+  var siteUrl = window.location.origin;
+  var currentUrl = window.location.href;
+
+  function injectJSONLD(obj, tag) {
+    if (tag && document.querySelector('script[data-schema="' + tag + '"]')) return;
+    var s = document.createElement('script');
+    s.type = 'application/ld+json';
+    if (tag) s.setAttribute('data-schema', tag);
+    s.textContent = JSON.stringify(obj);
+    document.head.appendChild(s);
+  }
+
+  injectJSONLD({
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    'name': 'زكرياء المعتصم',
+    'alternateName': 'مدونة إسلامية بالفيديو',
+    'url': siteUrl,
+    'inLanguage': 'ar',
+    'potentialAction': {
+      '@type': 'SearchAction',
+      'target': { '@type': 'EntryPoint', 'urlTemplate': siteUrl + '/search?q={search_term_string}' },
+      'query-input': 'required name=search_term_string'
+    }
+  }, 'website');
+
+  injectJSONLD({
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    'name': 'زكرياء المعتصم',
+    'url': siteUrl,
+    'logo': { '@type': 'ImageObject', 'url': siteUrl + '/favicon.ico', 'width': 512, 'height': 512 },
+    'sameAs': ['https://www.youtube.com/@%D8%B2%D9%83%D8%B1%D9%8A%D8%A7%D8%A1_%D8%A7%D9%84%D9%85%D8%B9%D8%AA%D8%B5%D9%85']
+  }, 'organization');
+
+  function addPostSchema() {
+    if (document.querySelector('script[data-schema="posting"]')) return true;
+    var titleEl = document.querySelector('.post-title');
+    if (!titleEl) return false;
+
+    var title = titleEl.textContent.trim();
+    var bodyEl = document.querySelector('.post-single .post-body');
+    var images = [];
+    if (bodyEl) {
+      var imgs = bodyEl.querySelectorAll('img');
+      for (var i = 0; i < imgs.length && images.length < 3; i++) {
+        var src = imgs[i].src || '';
+        if (src && src.indexOf('data:') !== 0) images.push(src);
+      }
+    }
+    var dateStr = '';
+    var dateEl = document.querySelector('.post-meta span');
+    if (dateEl) {
+      var m = dateEl.textContent.match(/(\d{4}-\d{2}-\d{2})/);
+      if (m) dateStr = m[1];
+    }
+    var dateISO = dateStr ? new Date(dateStr).toISOString() : new Date().toISOString();
+    var labelEls = document.querySelectorAll('.post-meta a');
+    var keywords = [];
+    for (var k = 0; k < labelEls.length; k++) {
+      var t = labelEls[k].textContent.trim();
+      if (t) keywords.push(t);
+    }
+
+    var schema = {
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      'mainEntityOfPage': { '@type': 'WebPage', '@id': currentUrl },
+      'headline': title,
+      'name': title,
+      'description': title,
+      'inLanguage': 'ar',
+      'author': { '@type': 'Person', 'name': 'زكرياء المعتصم', 'url': siteUrl },
+      'publisher': {
+        '@type': 'Organization',
+        'name': 'زكرياء المعتصم',
+        'logo': { '@type': 'ImageObject', 'url': siteUrl + '/favicon.ico', 'width': 512, 'height': 512 }
+      },
+      'datePublished': dateISO,
+      'dateModified': dateISO,
+      'url': currentUrl,
+      'isPartOf': { '@type': 'Blog', 'name': 'زكرياء المعتصم', 'url': siteUrl }
+    };
+    if (images.length) schema.image = images;
+    if (keywords.length) schema.keywords = keywords.join(', ');
+
+    injectJSONLD(schema, 'posting');
+    return true;
+  }
+
+  function addBreadcrumb() {
+    if (document.querySelector('script[data-schema="breadcrumb"]')) return true;
+    var titleEl = document.querySelector('.post-title');
+    if (!titleEl) return false;
+
+    injectJSONLD({
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        { '@type': 'ListItem', 'position': 1, 'name': 'الرئيسية', 'item': siteUrl },
+        { '@type': 'ListItem', 'position': 2, 'name': titleEl.textContent.trim(), 'item': currentUrl }
+      ]
+    }, 'breadcrumb');
+    return true;
+  }
+
+  var tries = 0;
+  var timer = setInterval(function () {
+    var a = addPostSchema();
+    var b = addBreadcrumb();
+    if ((a && b) || ++tries > 30) clearInterval(timer);
+  }, 500);
+})();
+//]]>
+</script>
+
+</body>
+</html>
